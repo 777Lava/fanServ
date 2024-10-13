@@ -9,5 +9,5 @@ import (
 func main(){
 	srv := new(server.Server)
 	handler := pkg.NewHandler()
-	srv.Run("8080", handler.InitRoutes())
+	srv.Run("80", handler.InitRoutes())
 }
