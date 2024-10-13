@@ -13,25 +13,24 @@ body {
 .full {
 
     top: -50px;
-
+    
+    display: grid;                  /* Используем CSS Grid */
+        grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
+        gap: 10px;      
     height: 100vh; /* Задает высоту на весь экран*/
     background: linear-gradient(to right, white, rgb(252, 6, 252)); 
 }
-.centered-images{
-    position: center;;
-
-    display: flex;
-    gap: 660px;
-
-/* Расстояние между картинками */
-
+img{
+    width: 100%;                   /* Изображение занимает всю ширину контейнера */
+    height: 70%;  
 }
-.centered-images img { 
+
+
+.centered-images{ 
     margin-top: 50px;
     width: 380px; /* Задайте нужную ширину для изображений */
-    height: auto; /* Сохраняет пропорции изображения */
-
-
+    height: 550px;
+    margin-left: 50px; /* Сохраняет пропорции изображения */
 }
 .container {
     width: 100%;
@@ -39,10 +38,9 @@ body {
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    position: relative;
+    position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    top: -400px;
 }
 
 h1 {
