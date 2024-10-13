@@ -13,10 +13,10 @@ body {
 .full {
 
     top: -50px;
-    
+    width: 100%;
     display: grid;                  /* Используем CSS Grid */
-        grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
-        gap: 10px;      
+    grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
+    gap: 10px;      
     height: 100vh; /* Задает высоту на весь экран*/
     background: linear-gradient(to right, white, rgb(252, 6, 252)); 
 }
